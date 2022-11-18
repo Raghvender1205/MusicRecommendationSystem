@@ -8,4 +8,4 @@ try:
     song_title = st.text_input("Enter Song: ")
     st.write(recommend(song_title, cosine).values)
 except KeyError:
-    pass
+    st.write('Song Not Found!!!')
